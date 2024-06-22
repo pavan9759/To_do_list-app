@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo_App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: rgb(148, 82, 211);
+        color: rgb(204, 49, 49);
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(1, 12, 43);
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+        font-size: 2rem;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: rgb(235, 235, 235);
+    }
+    
+    nav ul li a:hover {
+        color: rgb(236, 224, 224);
+        font-size: 1.4rem;
+    }
+    
+    main hr {
+        border: 10;
+        background: #635fa1;
+        height: 1.01;
+        margin: 40px 84px;
+    }
+    
+    .left {
+        font-size: 4rem;
+    }
+    
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+    }
+    
+    .firstsection.div {
+        width: 30%;
+    }
+    
+    .left {
+        font-size: 2.5rem;
+    }
+    
+    .leftsection {
+        font-size: 5rem;
+        margin: 200px;
+    }
+    
+    .rightsection img {
+        width: 120%;
+    }
+    
+    .purple {
+        color: rgb(148, 82, 211);
+    }
+    
+    .text-gray {
+        color: rgb(179, 24, 24);
+    }
+    
+    #element {
+        color: rgb(148, 82, 211);
+    }
+    
+    .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        font-size: 30px;
+    }
+    
+    .secondsection h1 {
+        font-size: 1.9rem;
+    }
+    
+    .secondsection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px;
+    }
+    
+    .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">TO DO LIST</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/">about</a></li>
+                <li><a href="/">service</a></li>
+                <li><a href="/">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="todo-container">
+        <h1>ToDo List <img src="./imgs/checklist.png" alt=""></h1>
+        <div class="input"><input type="text" id="input-field" placeholder="Add your task..."><button class="btn">Add Task</button></div>
+        <ul class="list-item">
+            <!-- <li class="checked">Task 1</li><li>Task 2</li><li>Task 3</li>-->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
