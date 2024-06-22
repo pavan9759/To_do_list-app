@@ -1,1 +1,1 @@
-# To_do_list-app
+a simple todo list using html and javascript
